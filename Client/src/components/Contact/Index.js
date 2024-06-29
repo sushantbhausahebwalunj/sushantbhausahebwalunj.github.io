@@ -348,7 +348,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:4000/send-mail", {
+      await axios.post(`deployeportfoliobackend-production.up.railway.app/send-mail`, {
         email,
         sub,
         msg
